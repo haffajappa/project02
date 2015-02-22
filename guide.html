@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide: Updated February 21</title>
+    <link href="css/main.css" rel="stylesheet">
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <h1>STYLE GUIDE TEMPLATE</h1>
+    <p>Below are the styles to be used with the company's website.</p>
+    <p>Guide by Stephanie Taniguchi + Yan Yao Li | IAT339 | D101</p>
+
+    <!--navigation -->
+      Go to: <br>
+      <a href="#Colours" class="button2">COLOURS + FONT FACES</a>
+      <a href="#fonts" class="button2">HEADINGS</a>
+      <a href="#buttons" class="button2">BUTTONS</a>
+      <a href="#forms" class="button2">FORMS + SEARCH</a>
+      <a href="#images" class="button2">IMAGES</a>
+      <a href="#navigation" class="button2">NAVIGATION</a>
+
+    <!-- Colors -->
+    <section id="Colours">
+      <h2> BRAND ELEMENTS </h2>
+      <h4> COLOURS: </h4>
+      <div class="coloredBox colour1">
+        <p> #D03967 </p>
+      </div>
+      <div class="coloredBox colour2">
+        <p> #222222 </p>
+      </div>
+      <div class="coloredBox colour3">
+        <p> #E5E5E5 </p>
+      </div>
+       
+    </section>
+    <!-- Fonts + Headings -->
+     <section id="fonts">
+      <h2> HEADINGS + TEXT </h2>
+      <table>
+        <!-- TABLE TITLES -->
+        <tr>
+          <td>
+            <h4> CSS SELECTOR </h4>
+          </td>
+           <td>
+            <h4> SAMPLE CODE </h4>
+          </td>
+           <td>
+            <h4> RENDERED ELEMENT </h4>
+          </td>
+        </tr>
+
+        <!-- H1 styles -->
+        <tr>
+          <td>
+            <p>'h1'</p>
+          </td>
+          <td>
+            <code>&lt;h1 class="bigHeading"&gt;LOREM IPSUM&lt;/h1&gt;</code>
+          </td>
+          <td>
+             <h1 class="bigHeading"> LOREM IPSUM </h1>
+          </td>
+        </tr>
+
+        <!-- H2 styles -->
+        <tr>
+          <td>
+            <p>'h2'</p>
+          </td>
+          <td>
+            <code>&lt;h1 class="medHeading"&gt;LOREM IPSUM&lt;/h2&gt;</code>
+          </td>
+          <td>
+             <h2 class="medHeading"> LOREM IPSUM </h2>
+          </td>
+        </tr>
+
+        <!-- H3 styles -->
+        <tr>
+          <td>
+            <p>'h3'</p>
+          </td>
+          <td>
+            <code>&lt;h3 class="smallHeading"&gt;LOREM IPSUM&lt;/h3&gt;</code>
+          </td>
+          <td>
+             <h3 class="smallHeading"> LOREM IPSUM </h3>
+          </td>
+        </tr>
+
+         <!-- P styles -->
+        <tr>
+          <td>
+            <p>'p'</p>
+          </td>
+          <td>
+            <code>&lt;p class="bodyText"&gt;LOREM IPSUM&lt;/p&gt;</code>
+          </td>
+          <td>
+             <p class="bodyText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </td>
+        </tr>
+
+      </table>
+
+    </section>
+
+    <!-- Buttons -->
+    <section id="buttons">
+      <h2>DEFAULT BUTTON STYLE</h2>
+      <h4>CSS SELECTOR:</h4>
+      <p>'a.button'</p>
+      <h4>SAMPLE CODE:</h4>
+      <code>&lt;a href="#" class="button"&gt;DEFAULT BUTTON&lt;/a&gt;</code>
+      <h4>RENDERED ELEMENT:</h4>
+      <a class="button" href="#">DEFAULT BUTTON</a>
+    </section>
+
+    <!-- Buttons -->
+    <section id="altButton">
+      <h2>ALTERNATE BUTTONS</h2>
+      <h4>CSS SELECTOR:</h4>
+      <p>'a.button2'</p>
+      <h4>SAMPLE CODE:</h4>
+      <code>&lt;a href="#" class="button2"&gt;BUTTON 2&lt;/a&gt;</code>
+      <h4>RENDERED ELEMENT:</h4>
+      <a class="button2" href="#">BUTTON 2</a>
+    </section>
+
+     <!-- Forms -->
+    <section id="forms">
+      <h2>FORMS AND SEARCH</h2>    
+        <h4>CSS SELECTOR:</h4>
+        <p>'.input-wrapper'</p>
+        <h4>SAMPLE CODE:</h4>
+        <code>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;div class="input-wrapper"&gt; <br>
+          &nbsp; &lt;label for="form-name"&gt; NAME: &lt; /label &gt; <br> 
+          &nbsp; &lt;input type="text" id="form-name" placeholder="YOUR NAME"&gt; <br>
+          &lt;/div &gt;<br>
+          &lt;/form &gt;
+        </code>
+
+        <h4>RENDERED ELEMENT:</h4>
+
+        <form method="post" action="#">
+          <div class="input-wrapper">
+            <div id="first-name" class="form-type-input">
+              <label for="form-subject">FIRST NAME:</label>
+              <input type="text" id="form-first-name">
+            </div>
+
+            <div id="last-name" class="form-type-input">
+              <label for="form-subject">LAST NAME:</label>
+              <input type="text" id="form-last-name">
+            </div>
+
+            <div id="address" class="form-type-input">
+              <label for="form-subject">ADDRESS:</label>
+              <input type="text" id="from-address" size="70">
+            </div>
+
+            <div id="service" class="drop-down form-type-input">
+                <label for="form-subject">SERVICE:</label>
+                  <select id="from-service" class="select-one">
+                     <option value="Graphic Design">GRAPHIC DESIGN</option>
+                     <option value="Web Design">WEB DESIGN</option>
+                     <option value="Video">VIDEO</option>
+                     <option value="Photography">PHOTOGRAPHY</option>
+                  </select>
+            </div>
+
+          </div>
+        </form>
+
+    </section>
+
+    <!-- images -->
+    <section id="images">
+      <h2>IMAGE LINKS</h2>
+      <h4>CSS SELECTOR:</h4>
+      <p>'a.clickImage'</p>
+      <h4>SAMPLE CODE:</h4>
+      <code>
+        &lt;div class="image-background" &gt; <br>
+        &lt;a href="#" class="clickImage"&gt; &lt;img src="placeholder.jpg" width="400px" height="600px"&gt;  &lt;/a&gt; <br>
+        &lt;/div &gt;
+      </code>
+      <h4>RENDERED ELEMENT:</h4>
+      <div class="image-background">
+        <a class="clickImage" href="#">
+          <img src="img/1.jpg" ></a>
+      </div>
+      <div class="image-background">
+        <a class="clickImage" href="#">
+          <img src="img/2.jpg" ></a>
+      </div>
+      <div class="image-background">
+        <a class="clickImage" href="#">
+          <img src="img/3.jpg" ></a>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section id="navigation">
+      <h2>NAVIGATION</h2>
+      <h4>CSS SELECTOR:</h4>
+      <p>'nav .button'</p>
+      <h4>SAMPLE CODE:</h4>
+      <code>&lt;nav&gt;<br>
+        &nbsp; &nbsp; &lt;a href="#" class="button"&gt;BUTTON ONE&lt;/a&gt; <br>
+        &nbsp; &nbsp; &lt;a href="#" class="button"&gt;BUTTON TWO&lt;/a&gt; <br>
+        &nbsp; &nbsp; &lt;a href="#" class="button"&gt;BUTTON THREE&lt;/a&gt; <br>
+        &nbsp; &nbsp; &lt;a href="#" class="button"&gt;BUTTON FOUR&lt;/a&gt; <br>
+        &nbsp; &nbsp; &lt;a href="#" class="button"&gt;BUTTON FIVE&lt;/a&gt; <br>
+        &nbsp; &lt;/nav&gt;</code>
+      <h4>RENDERED ELEMENT:</h4>
+        <nav>
+          <a href="#" class="button"> BUTTON ONE </a>
+          <a href="#" class="button"> BUTTON TWO </a>
+          <a href="#" class="button"> BUTTON THREE</a>
+          <a href="#" class="button"> BUTTON FOUR</a>
+          <a href="#" class="button"> BUTTON FIVE</a>
+        </nav>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,212 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem;
+  color: #686868;
+}
+
+section {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px dotted #333;
+}
+
+h1 {
+  font-weight:700;
+  font-size:36px;
+  letter-spacing:8px;
+}
+
+h2 {
+  font-weight:700;
+  font-size:100%;
+}
+
+h3{
+  font-weight:700;
+  font-size:70%;
+}
+
+/*just for the guide, this font won't be used in actual site*/
+h4 {
+  font-family: sans-serif;
+  color: grey;
+}
+
+/*p { 
+  font-family: 'Karla';
+  text-align: left;
+  line-height: 1.25;
+}*/
+
+
+
+nav {
+  padding: 1em 0em 1em 0em;
+  position: absolute;
+  right: 1em;
+  background-color: #222222;
+  border: 1px dotted grey;
+}
+
+nav .button {
+  margin: 0em 2em 0em 2em;
+}
+
+section h1 {
+  color: #D03967;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+section p {
+  margin-top: 0;
+}
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+
+table {
+  width: 75%;
+  margin: 1em 1em;
+}
+
+table, td, th {
+    border: 1px dotted grey;
+    text-align: center;
+}
+
+td {
+  min-width: 1em;
+  max-width: 6em;
+  padding: 1em;
+}
+
+.coloredBox {
+  display: inline-block;
+  padding: 1em;
+  height: 5em;
+  width: 5em;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.colour1{
+  background-color: #D03967;
+}
+
+.colour2{
+  background-color:#222222;
+  border:1px solid #222222;
+  color:#FFFFFF;
+}
+
+.colour3{
+  background-color: #E5E5E5;
+  color: grey !important;
+}
+
+
+a.button {
+  display: inline-block;
+  margin:0px 0px 0px 0px;
+  padding: 1.0em 2.0em;
+  color: #FFFFFF;
+  background-color: #222222;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+a.button2 {
+  display: inline-block;
+  font-family: 'Josefin Sans';
+  padding: 0.5em 0.75em;
+  background-color: none;
+  text-decoration: none;
+  color: #EDA958;
+  border: 1px solid #EDA958;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+a.button:hover, a.button:focus {
+  background-color: #D03967;
+  color: white;
+}
+
+a.button2:hover, a.button2:focus {
+  background-color: #EDA958;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.input-wrapper {
+  padding: 1em;
+  border: 1px dotted grey;
+}
+
+.input-wrapper label {
+  font-size: 80%;
+  font-weight:700;
+  padding-right:1em;
+}
+
+.input-wrapper input {
+  letter-spacing: 2px;
+  background-color: #E5E5E5;
+  border: 2px solid #E5E5E5;
+  color: #222222 !important;
+  min-width: 25%;
+}
+
+.form-type-input {
+  padding: 0.5em 0em 0.5em 0em;
+}
+
+.select-one {
+   overflow:hidden;
+   display:inline-block;
+   width:350px;
+   background: url("../img/arrow.png") no-repeat #fff 318px;
+    /* dropdown_arrow.png is a 31x28 image */
+}
+
+.select-one option {
+  padding-left: 1em;
+}
+select {
+    border:0;
+    border-radius: 0;
+    background:transparent;
+    height:2em;
+    border:1px solid #d8d8d8;
+    width:350px;
+    -webkit-appearance: none;
+    vertical-align: middle;
+}
+
+.image-background {
+  display: inline-block;
+  z-index: 0;
+  background: #D03967;
+}
+
+
+a.clickImage {
+  z-index:-1;
+  opacity: 1;
+  -moz-transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+a.clickImage:hover, a.clickImage:focus {
+  opacity: 0.5;
+}
+
