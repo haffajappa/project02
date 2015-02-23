@@ -14,10 +14,17 @@
 	text-align: center;
 }
 
+.service_grid{
+	width:100%;
+}
+
 .col-5of10 {
 	width:50%;
 }
 
+.col-3of10{
+	width:33.33%;
+}
 
 @media (max-width: 50em) {
 	.col-5of10{
@@ -25,9 +32,18 @@
 	}
 }
 
+
+@media (max-width:50em){
+	.col-3of10{
+		width:100%;
+	}
+}
+
+
 .col-2of10 {
 	width: 20%;
 }
+
 
 @media (max-width: 30em) {
 	.col-2of10{
@@ -37,6 +53,7 @@
 		padding: 1em 1em;
 	}
 }
+
 
 .grid:after{
 	content:"";
