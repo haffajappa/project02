@@ -1,0 +1,45 @@
+/* grid style sheet */
+/* aim to make a separate grid css so you can use across pages and sites */
+
+*, *::after, *::before; {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*tells CSS file that any classes that start with this will have these properties*/
+[class^='col-'] {
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+
+.col-5of10 {
+	width:50%;
+}
+
+
+@media (max-width: 50em) {
+	.col-5of10{
+		width:100%;
+	}
+}
+
+.col-2of10 {
+	width: 20%;
+}
+
+@media (max-width: 30em) {
+	.col-2of10{
+		width:100%;
+		border-bottom: white solid 1px;
+		text-align: center;
+		padding: 1em 1em;
+	}
+}
+
+.grid:after{
+	content:"";
+	display: block;
+	clear:both; /*make sure nothing remains on left or right */
+}
