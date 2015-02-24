@@ -14,8 +14,16 @@
 	text-align: center;
 }
 
-.service_grid{
+.col-10of10 {
 	width:100%;
+}
+
+.col-7of10 {
+	width: 70%;
+}
+
+.col-6of10 {
+	width: 60%;
 }
 
 .col-5of10 {
@@ -23,17 +31,19 @@
 }
 
 .col-3of10{
-	width:33.33%;
+	float:left;
+	position: relative;
+	width:33.333%;
+}
+
+.col-2of10 {
+	width: 20%;
 }
 
 @media (max-width: 50em) {
 	.col-5of10{
 		width:100%;
 	}
-}
-
-
-@media (max-width:50em){
 	.col-3of10{
 		width:100%;
 	}

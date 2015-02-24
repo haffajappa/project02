@@ -8,12 +8,10 @@ body {
 section {
   margin: 0em 0;
   padding: 0.5em 0;
-  border-top: 1px dotted #333;
-  clear: both;
 }
 
 div {
-  clear: both;
+
 }
 
 h1 {
@@ -52,6 +50,7 @@ nav {
   border: 1px dotted grey;
   letter-spacing: 2;
   clear: both;
+  z-index: 20;
 }
 
 nav .button {
@@ -239,19 +238,35 @@ a.clickImage:hover, a.clickImage:focus {
   opacity: 0.5;
 }
 
-
-/** THIS IS YAN'S ADD UP ON THE BOTTOM **/
-
-
-
-.graphic{
-  width:33.33%;
-  text-align:center;
-  padding-left: 2em;
+.serviceType {
+  box-sizing: border-box;
+  padding: 1em;
 }
 
-.web{
-  width:33.33%;
-
+.designersModule {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid grey;
+  height: 300px;
+  background-color: #D1D1E0;
+  padding: 1em;
 }
+
+.designersImage {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid grey;
+  background-color: grey;
+  height:100%;
+}
+
+.designersText {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid grey;
+  height:100%;
+  padding: 1em;
+}
+
+
 
