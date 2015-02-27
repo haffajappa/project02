@@ -174,13 +174,15 @@ a.button2:hover, a.button2:focus {
 
 .input-wrapper {
   padding: 1em;
-  border: 1px dotted grey;
+  /**border: 1px dotted grey;**/
 }
 
 .input-wrapper label {
   font-size: 80%;
   font-weight:700;
   padding-right:1em;
+  padding-left:1em;
+
 }
 
 .input-wrapper input {
@@ -268,5 +270,11 @@ a.clickImage:hover, a.clickImage:focus {
   padding: 1em;
 }
 
+.form{
+  margin:5em;
+}
 
+.choose-designer{
+  float:left;
+}
 
