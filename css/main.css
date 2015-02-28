@@ -7,13 +7,9 @@ body {
 
 section {
   margin: 0em 0;
-  padding: 0em 5em 0em 5em;
+  padding: 5em 5em 0em 5em;
 }
 
-
-div {
-
-}
 
 h1 {
   font-weight:700;
@@ -52,6 +48,7 @@ nav {
   letter-spacing: 2;
   clear: both;
   z-index: 20;
+  top: 0 !important;
 }
 
 nav .button {
@@ -64,6 +61,10 @@ nav .button {
 nav img {
   display: inline-block;
   height: 100%;
+}
+
+.navOption {
+  right:0;
 }
 
 #callToAction  {
@@ -118,7 +119,7 @@ td {
 
 .coloredBox {
   display: inline-block;
- /* padding: 1em;*/
+  padding: 1em;
   height: 5em;
   width: 5em;
   color: white;
@@ -169,12 +170,12 @@ a.button2 {
 
 a.button:hover, a.button:focus {
   background-color: #D03967;
-  color: white;
+  color: white !important;
 }
 
 a.button2:hover, a.button2:focus {
   background-color: #EDA958;
-  color: white;
+  color: white !important;
   font-weight: bold;
   font-style: italic;
 }
@@ -235,19 +236,32 @@ select {
 a.clickImage {
   z-index:-1;
   opacity: 1;
+ /* -moz-transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;*/
+
+}
+
+a.clickImage img {
   -moz-transition: opacity .3s linear;
   -webkit-transition: opacity .3s linear;
   -o-transition: opacity .3s linear;
-  transition: opacity .3s linear;
+  transition: opacity .3s linear;  
 }
 
-a.clickImage:hover, a.clickImage:focus {
+a.clickImage:hover img {
   opacity: 0.5;
 }
+
 
 .serviceType {
   box-sizing: border-box;
 /*  padding: 1em;*/
+}
+
+#worksMatrix {
+  margin-top:2em;
 }
 
 .designersModule {
@@ -255,14 +269,13 @@ a.clickImage:hover, a.clickImage:focus {
   float:left;
   border: 1px solid red;
   height: 300px;
-  background-color: #D1D1E0;
   /*padding: 1em;*/
   position: relative;
+  background-color: #D03967;
 }
 
 .designersImage {
   border: 1px solid grey;
-  background-color: grey;
   height: 100%;
 }
 
@@ -278,9 +291,14 @@ a.clickImage:hover, a.clickImage:focus {
   letter-spacing: 3px;
   color: white;
   top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   position: absolute;
+  text-align: center !important;
+  box-sizing: border-box;
 }
 
-.designersText {
-  vertical-align: middle;
+.designersText p{
+  text-align: center !important;
 }
