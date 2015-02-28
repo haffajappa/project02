@@ -7,8 +7,9 @@ body {
 
 section {
   margin: 0em 0;
-  padding: 0.5em 0;
+  padding: 0em 1em 0em 1em;
 }
+
 
 div {
 
@@ -36,16 +37,16 @@ h4 {
   color: grey;
 }
 
-/*p { 
+p { 
   font-family: 'Karla';
   text-align: left;
   line-height: 1.25;
-}*/
+}
 
 nav {
   width:100%;
-  padding: 0em 1em;
-  position: absolute;
+  padding: 0em 0em;
+  position: fixed;
   background-color: #222222;
   border: 1px dotted grey;
   letter-spacing: 2;
@@ -55,13 +56,19 @@ nav {
 
 nav .button {
   margin: 0em 2em 0em 2em;
-  float: right;
+  float: left;
   text-align: center;
+  right:0;
 }
 
 nav img {
   display: inline-block;
   height: 100%;
+}
+
+#callToAction  {
+  color: #D03967;
+  font-weight: bolder;
 }
 
 .fullImage img {
@@ -105,13 +112,13 @@ td {
 }
 
 .mainContainer {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .coloredBox {
   display: inline-block;
-  padding: 1em;
+ /* padding: 1em;*/
   height: 5em;
   width: 5em;
   color: white;
@@ -240,33 +247,35 @@ a.clickImage:hover, a.clickImage:focus {
 
 .serviceType {
   box-sizing: border-box;
-  padding: 1em;
+/*  padding: 1em;*/
 }
 
 .designersModule {
   box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid grey;
+  float:left;
+  border: 1px solid red;
   height: 300px;
   background-color: #D1D1E0;
   padding: 1em;
+  position: relative;
 }
 
 .designersImage {
-  box-sizing: border-box;
-  display: inline-block;
   border: 1px solid grey;
   background-color: grey;
-  height:100%;
+  height: 100%;
+}
+
+
+.designersText {
+  border: 1px solid grey;
+  padding: 1em;
+  letter-spacing: 3px;
+  color: white;
+  top: 0;
+  position: absolute;
 }
 
 .designersText {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid grey;
-  height:100%;
-  padding: 1em;
+  vertical-align: middle;
 }
-
-
-

@@ -16,6 +16,7 @@
 
 .col-10of10 {
 	width:100%;
+
 }
 
 .col-7of10 {
@@ -38,21 +39,21 @@
 
 .col-2of10 {
 	width: 20%;
+	margin:none;
 }
 
-@media (max-width: 50em) {
+@media (min-width: 500px max-width:800px) {
 	.col-5of10{
 		width:100%;
 	}
 	.col-3of10{
 		width:100%;
 	}
+	.col-2of10 {
+		width:48%;
+	}
 }
 
-
-.col-2of10 {
-	width: 20%;
-}
 
 
 @media (max-width: 30em) {
@@ -60,7 +61,11 @@
 		width:100%;
 		border-bottom: white solid 1px;
 		text-align: center;
-		padding: 1em 1em;
+		/*padding: 1em 1em;*/
+	}
+
+	section {
+		padding:0;
 	}
 }
 
