@@ -42,7 +42,26 @@
 	margin:none;
 }
 
-@media (min-width: 500px max-width:800px) {
+@media (min-width: 50em) and (max-width:70em) {
+	.col-5of10{
+		width:100%;
+	}
+	.col-3of10{
+		width:100%;
+	}
+	.designersModule{
+		width:33.333%;
+	}
+
+	section {
+		padding:0!important;
+		margin:0!important;
+	}
+}
+
+
+
+@media (min-width: 30em) and (max-width:50em) {
 	.col-5of10{
 		width:100%;
 	}
@@ -50,7 +69,16 @@
 		width:100%;
 	}
 	.col-2of10 {
-		width:48%;
+		width:50%;
+	}
+
+	nav .col-2of10 {
+		width:20%;
+	}
+
+	section {
+		padding:0!important;
+		margin:0!important;
 	}
 }
 
@@ -65,7 +93,8 @@
 	}
 
 	section {
-		padding:0;
+		padding:0!important;
+		margin:0!important;
 	}
 }
 
