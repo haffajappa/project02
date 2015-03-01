@@ -20,11 +20,13 @@ h1 {
 h2 {
   font-weight:700;
   font-size:120%;
+  text-align:left;
 }
 
 h3{
   font-weight:700;
-  font-size:70%;
+  font-size:100%;
+  text-align: left;
 }
 
 /*just for the guide, this font won't be used in actual site*/
@@ -75,6 +77,10 @@ nav img {
 .fullImage img {
   box-sizing: border-box;
   width:100%;
+}
+
+.noMargins {
+  padding: 0 0 0 0 !important;
 }
 
 section h1 {
@@ -157,13 +163,15 @@ a.button {
 }
 
 a.button2 {
-  display: inline-block;
+  float: left;
+  font-weight: bolder;
   font-family: 'Josefin Sans';
-  padding: 0.5em 0.75em;
   background-color: none;
   text-decoration: none;
-  color: #EDA958;
-  border: 1px solid #EDA958;
+  color: #D03967;
+  padding: 0em 1em 0em 0em;
+  border: none;
+  margin:none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
@@ -174,7 +182,7 @@ a.button:hover, a.button:focus {
 }
 
 a.button2:hover, a.button2:focus {
-  background-color: #EDA958;
+  background-color: #D03967;
   color: white !important;
   font-weight: bold;
   font-style: italic;
@@ -301,4 +309,22 @@ a.clickImage:hover img {
 
 .designersText p{
   text-align: center !important;
+}
+
+.personalInfo {
+  padding-right: 2em;
+}
+
+.personalInfo h2 {
+  font-size:200%;
+  line-height: 0.25em;
+  padding: 0 0 0 0 !important;
+}
+
+.personalInfo strong {
+  color: #D03967;
+}
+
+.areasOfWork {
+  margin-bottom: 1em;
 }

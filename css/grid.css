@@ -92,6 +92,13 @@
 		/*padding: 1em 1em;*/
 	}
 
+	.col-3of10{
+		width:100%;
+	}
+
+	.serviceType {
+		padding: 1em 1em 1em;
+	}
 	section {
 		padding:0!important;
 		margin:0!important;
