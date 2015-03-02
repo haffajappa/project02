@@ -162,6 +162,20 @@ a.button {
   transition: background-color 0.5s ease-out;
 }
 
+a.submit-button{
+  display: inline-block;
+  float:right;
+  padding:0.8em 2em 0.8em 2em;
+  margin:3em;
+  color: #FFFFFF;
+  background-color: #222222;
+  text-decoration: none;
+  font-size: 80%;
+  letter-spacing: 2px;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
 a.button2 {
   float: left;
   font-weight: bolder;
@@ -176,7 +190,7 @@ a.button2 {
   transition: background-color 0.5s ease-out;
 }
 
-a.button:hover, a.button:focus {
+a.button:hover, a.button:focus, a.submit-button:hover, a.submit-button:focus {
   background-color: #D03967;
   color: white !important;
 }
@@ -189,50 +203,86 @@ a.button2:hover, a.button2:focus {
 }
 
 .input-wrapper {
-  padding: 1em;
-  border: 1px dotted grey;
+  /**padding: 1em;**/
+  text-align:left;
+  padding-right:3em;
+  /**border: 1px dotted grey;**/
 }
 
 .input-wrapper label {
   font-size: 80%;
   font-weight:700;
-  padding-right:1em;
 }
 
 .input-wrapper input {
   letter-spacing: 2px;
   background-color: #E5E5E5;
-  border: 2px solid #E5E5E5;
-  color: #222222 !important;
+  border: 1px solid #E5E5E5;
+  background:transparent;
   min-width: 25%;
+  width:65%;
+  float:right;
+  height:1.5em;
+  text-indent:2em;
 }
+
 
 .form-type-input {
   padding: 0.5em 0em 0.5em 0em;
 }
 
+.input-wrapper select{
+  border-radius: 0;
+  letter-spacing: 2px;
+  background-color:#E5E5E5;
+  border:2px solid #E5E5E5;
+  color:#222222;
+  background:transparent;
+  height:2em;
+  border:1px solid #d8d8d8;
+  width:65%;
+  text-indent:2em;
+}
+
+.service-option{
+  padding-right:3em;
+}
+
+.select-one{
+  display:inline-block;
+  float:right;
+}
+
+
+
+
+
+/**
 .select-one {
    overflow:hidden;
    display:inline-block;
    width:350px;
    background: url("../img/arrow.png") no-repeat #fff 318px;
-    /* dropdown_arrow.png is a 31x28 image */
+    /* dropdown_arrow.png is a 31x28 image 
 }
 
 .select-one option {
   padding-left: 1em;
 }
 
-select {
+.input-wrapper select {
     border:0;
     border-radius: 0;
+    background-color: #E5E5E5;
+    border: 2px solid #E5E5E5;
     background:transparent;
     height:2em;
     border:1px solid #d8d8d8;
-    width:350px;
+    width:70%;
     -webkit-appearance: none;
     vertical-align: middle;
 }
+*/
 
 .image-background {
   display: inline-block;
@@ -315,10 +365,69 @@ a.clickImage:hover img {
   padding-right: 2em;
 }
 
+<<<<<<< HEAD
+.form{
+  display:inline-block;
+  margin:5em 5em 2em 5em;
+}
+
+.form h2{
+  text-align:left;
+}
+
+.info-form{
+  display:inline-block;
+}
+
+.info-form h2{
+  text-align:left;
+}
+
+.formField {
+  margin: 0px !important;
+  float:left;
+  position:relative;
+}
+
+.serviceType p{
+  padding:1em;
+  text-align:center;
+}
+
+.serviceType h2{
+  text-align:center;
+}
+
+footer{
+  background-color:black;
+  padding-bottom:10em;
+  padding-top:4em;
+}
+
+.homeFooter p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size:0.6em;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.homeFooter{
+  display:inline-block;
+}
+
+.homeFooter img{
+  padding:0.2em;
+}
+
+
+
+=======
 .personalInfo h2 {
   font-size:200%;
   line-height: 0.25em;
   padding: 0 0 0 0 !important;
+>>>>>>> 081ed6dbd53a892a181deb25db8d3c4629a7e075
 }
 
 .personalInfo strong {
