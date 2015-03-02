@@ -16,6 +16,7 @@
 
 .col-10of10 {
 	width:100%;
+
 }
 
 .col-7of10 {
@@ -34,25 +35,54 @@
 	float:left;
 	position: relative;
 	width:33.333%;
+	text-align:center;
 }
 
 .col-2of10 {
 	width: 20%;
+	margin:none;
 }
 
-@media (max-width: 50em) {
+@media (min-width: 50em) and (max-width:70em) {
 	.col-5of10{
 		width:100%;
 	}
 	.col-3of10{
 		width:100%;
 	}
+	.designersModule{
+		width:33.333%;
+	}
+
+	section {
+		padding:0!important;
+		margin:0!important;
+	}
 }
 
 
-.col-2of10 {
-	width: 20%;
+
+@media (min-width: 30em) and (max-width:50em) {
+	.col-5of10{
+		width:100%;
+	}
+	.col-3of10{
+		width:100%;
+	}
+	.col-2of10 {
+		width:50%;
+	}
+
+	nav .col-2of10 {
+		width:20%;
+	}
+
+	section {
+		padding:0!important;
+		margin:0!important;
+	}
 }
+
 
 
 @media (max-width: 30em) {
@@ -60,7 +90,19 @@
 		width:100%;
 		border-bottom: white solid 1px;
 		text-align: center;
-		padding: 1em 1em;
+		/*padding: 1em 1em;*/
+	}
+
+	.col-3of10{
+		width:100%;
+	}
+
+	.serviceType {
+		padding: 1em 1em 1em;
+	}
+	section {
+		padding:0!important;
+		margin:0!important;
 	}
 }
 
