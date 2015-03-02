@@ -3,40 +3,219 @@
   <head>
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
-    <title> Project 2</title>
+    <title>Project 2</title>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
+
   <body>
-    <div class = "mainContainer">
+
+<div class = "mainContainer">
         <nav>
-          <a href="support.html" class="button col-2of10"> SUPPORT </a>
-          <a href="book.html" class="button col-2of10"> BOOK A DESIGNER </a>
-          <a href="designers.html" class="button col-2of10"> DESIGNERS + WORKS </a>
           <a href="index.html" class="button col-2of10"> HOME </a>
+           <a href="designers.html" class="button col-2of10"> DESIGNERS + WORKS </a>
+          <a href="support.html" class="button col-2of10"> SUPPORT </a>
+          <a href="book.html" class="button col-2of10" id="callToAction"> BOOK A DESIGNER </a>
         </nav>
+
         <section>
-          
-        <section id="form">
+          <div class="col-10of10">
+            <div class="info-form col-7of10">
+              <h2>YOUR BOOKING</h2>
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id="choose-service" class="drop-down form-type-input">
+                    <label for="form-subject" class="service-option">SERVICE:</label>
+                    <select id="form-service" class="select-one">
+                      <option value="Graphic Design">GRAPHIC DESIGN</option>
+                      <option value="Web Design">WEB DESIGN</option>
+                      <option value="Video">VIDEO</option>
+                      <option value="Photography">PHOTOGRAPHY</option>
+                   </select>
+                  </div>
+                </div>
+              </div>
 
-          <form method="post" action="#">
-          <div class="input-wrapper">
-            <div id="first-name" class="form-type-input">
-              <label for="form-subject">FIRST NAME:</label>
-              <input type="text" id="form-first-name">
+               <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id="choose-designer" class="drop-down form-type-input">
+                    <label for="form-subject" class="designer-option">DESIGNERS:</label>
+                    <select id="form-service" class="select-one">
+                      <option value="stephanieTaniguchi">Stephanie Taniguchi</option>
+                      <option value="yanLi">Yan Yao Li</option>
+                      <option value="evaLi">Eva Li</option>
+                      <option value="janiceNg">Janice Ng</option>
+                   </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "date" class="form-type-input">
+                    <label for="form-subject">DATE:</label>
+                    <input type="date" id="form-date">
+                  </div>
+                </div>
+              </div>
+
+               <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "time" class="form-type-input">
+                    <label for="form-subject">TIME:</label>
+                    <input type="time" id="form-time">
+                  </div>
+                </div>
+              </div>
+
             </div>
+          </div>
+        </section>
 
-            <div id="last-name" class="form-type-input">
-              <label for="form-subject">LAST NAME:</label>
-              <input type="text" id="form-last-name">
+
+<!-- .................................................... -->
+
+
+        <section>
+          <div class="col-10of10">
+            <div class="info-form col-7of10">
+              <h2>PERSONAL INFORMATION</h2>
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "firstname" class="form-type-input">
+                    <label for="form-subject">FIRST NAME:</label>
+                    <input type="text" id="form-first-name">
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "lastname" class="form-type-input">
+                    <label for="form-subject">LAST NAME:</label>
+                    <input type="text" id="form-last-name">
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "phone" class="form-type-input">
+                    <label for="form-subject">PHONE:</label>
+                    <input type="text" id="form-phone">
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "email" class="form-type-input">
+                    <label for="form-subject">E-MAIL:</label>
+                    <input type="email" id="form-email">
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "address" class="form-type-input">
+                    <label for="form-subject">ADDRESS:</label>
+                    <input type="text" id="form-address">
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "city" class="form-type-input">
+                    <label for="form-subject">City:</label>
+                    <input type="text" id="form-city">
+                  </div>
+                </div>
+              </div>
+
             </div>
+          </div>
+        </section>
 
-            <div id="address" class="form-type-input">
-              <label for="form-subject">ADDRESS:</label>
-              <input type="text" id="from-address" size="70">
+<!-- .................................................... -->
+
+        <section>
+          <div class="col-10of10">
+            <div class="info-form col-7of10">
+              <h2>BILLING INFORMATION</h2>
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id="choose-card" class="drop-down form-type-input">
+                    <label for="form-subject" class="card-type">CARD TYPE:</label>
+                    <select id="form-service" class="select-one">
+                      <option value="visa">VISA</option>
+                      <option value="masterCard">MASTERCARD</option>
+                      <option value="americanExpress">AMERICAN EXPRESS</option>
+                   </select>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "cardNum" class="form-type-input">
+                    <label for="form-subject">CARD NUMBER:</label>
+                    <input type="text" id="form-number">
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "expiryDate" class="form-type-input">
+                    <label for="form-subject">EXPIRY DATE:</label>
+                    <input type="number" min="2015" max="2021" id="form-number" style="width:30%;">
+                    <input type="number" min="1" max="12" id="form-number" style="width:30%; margin-right:1em">
+                  </div>
+                </div>
+              </div>
+
+                <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "cardNum" class="form-type-input">
+                    <label for="form-subject">SECURITY CODE:</label>
+                    <input type="text" id="form-number">
+                  </div>
+                </div>
+              </div>
+
+                <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "address" class="form-type-input">
+                    <label for="form-subject">BILLING ADDRESS:</label>
+                    <input type="text" style="width:60%;"id="form-address">
+                  </div>
+                </div>
+              </div>
+
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "city" class="form-type-input">
+                    <label for="form-subject">City:</label>
+                    <input type="text" id="form-city">
+                  </div>
+                </div>
+              </div>
+
+               <div class="formField col-10of10">
+               <a class="submit-button" href="#">SUBMIT</a>
+              </div>
+
             </div>
+          </div>
+        </section>
 
-            <div id="service" class="drop-down form-type-input">
+        <!--      
+        <section class="form"> 
+          <div class="col-10of10">
+          	<div id="choose-designer" class="drop-down form-type-input">
                 <label for="form-subject">SERVICE:</label>
                   <select id="from-service" class="select-one">
                      <option value="Graphic Design">GRAPHIC DESIGN</option>
@@ -45,12 +224,27 @@
                      <option value="Photography">PHOTOGRAPHY</option>
                   </select>
             </div>
+          	<div class="input-wrapper">
+          		<div id = "name" class="form-type-input">
+          			<label for="form-subject">FIRST NAME:</label>
+          			<input type="text" id="form-first-name">
+          			<label for="form-subject">LAST NAME:</label>
+          			<input type="text" id="form-last-name">
+          		</div>
+          	</div>
+          	<div class="input-wrapper">
+          		<div id = "contact" class="form-type-input">
+          			<label for="form-subject">PHONE NUMBER:</label>
+          			<input type="text" id="form-first-name">
+          			<label for="form-subject">E-MAIL:</label>
+          			<input type="text" id="form-last-name">
+          		</div>
+          	</div>
+
 
           </div>
-        </form>
-        </section>
-    </div> <!--end main container -->
-
-  
+         
+          </section>
+        -->
+</div> <!--end main container -->
   </body>
-</html>
