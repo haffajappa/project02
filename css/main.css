@@ -74,11 +74,47 @@ nav img {
   font-weight: bolder;
 }
 
-.fullImage img {
+.imageTextOverlay {
+  position:relative;
+  height:1000px;
+  display: table;
+}
+
+.overlayContent {
+    vertical-align:middle;
+    display: table-cell;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+
+.fullImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:0;
+}
+
+.fullImage img{
   box-sizing: border-box;
+  display: inline-block;
   width:100%;
 }
 
+.introText {
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.introText p {
+  font-size:130%;
+}
 .noMargins {
   padding: 0 0 0 0 !important;
 }
@@ -183,6 +219,7 @@ a.submit-button{
 }
 
 a.button2 {
+  border: 1px dotted #D03967;
   float: left;
   font-weight: bolder;
   font-family: 'Josefin Sans';
@@ -319,22 +356,15 @@ a.clickImage:hover img {
 /*  padding: 1em;*/
 }
 
-#worksMatrix {
-  margin-top:2em;
-}
-
 .designersModule {
   box-sizing: border-box;
   float:left;
-  border: 1px solid red;
   height: 300px;
-  /*padding: 1em;*/
   position: relative;
   background-color: #D03967;
 }
 
 .designersImage {
-  border: 1px solid grey;
   height: 100%;
 }
 
@@ -366,7 +396,7 @@ a.clickImage:hover img {
   padding-right: 2em;
 }
 
-<<<<<<< HEAD
+
 .form{
   display:inline-block;
   margin:5em 5em 2em 5em;
@@ -449,6 +479,55 @@ footer{
   color: white;
   margin: 0 auto;
 }
+
+.areasOfWork button {
+  padding: none;
+}
+
+.graphicDesign img {
+  opacity: 0.5;
+}
+
+.webDesign img {
+  opacity: 0.75;
+}
+
+.photography img {
+  opacity: 0.25;
+}
+
+.illustration img {
+  opacity: 0.01;
+}
+
+.interactionDesign img {
+  opacity: 1;
+}
+
+.gd-hidden {
+  visibility: none;
+  display:none;
+  position: absolute;
+  opacity: 0;
+}
+
+.wd-hidden {
+  visibility: none;
+  display:none;
+  position: absolute;
+  opacity: 0;
+}
+
+.wd-shown {
+ visibility: visible;
+  opacity: 1;
+}
+
+.gd-shown {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*
 .book a {
   text-align: center !important;

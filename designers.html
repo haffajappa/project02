@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
     <title> Project 2</title>
     <link rel="stylesheet" href="css/grid.css">
@@ -15,29 +16,72 @@
           <a href="support.html" class="button col-2of10"> SUPPORT </a>
           <a href="book.html" class="button col-2of10" id="callToAction"> BOOK A DESIGNER </a>
         </nav>
-
-        <section class="grid" id="worksMatrix">
+        <section class="grid">
+          <div class="title col-10of10">
+            <h1> DESIGNERS + WORKS </h1>
+            <p> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. </p>
+          </div>
+        </section>
+        <section class="grid" >
+            
+          <div class="filters"> 
+            
+            <div class="col-10of10 areasOfWork">
+              <h3> FILTER</h3>
+            </div>
+            
+            <div class="col-10of10" id="filterMenu">  
+              <a href="#graphicDesign" class="button2 gd-toggle">
+                <div class="col-10of10">
+                  <p> graphic design </p>
+                </div>
+              </a>
+              <a href="#webDesign" class="button2 wd-toggle">
+                <div class="col-10of10">
+                  <p> web design </p>
+                </div>
+              </a>
+              <a href="#photography" class="button2 photography-toggle">
+                <div class="col-10of10">
+                  <p> photography </p>
+                </div>
+              </a>
+             <a href="#interactionDesign" class="button2 interactionDesign-toggle">
+                <div class="col-10of10">
+                  <p> interaction design </p>
+                </div>
+              </a>
+              <a href="#illustration" class="button2 illustration-toggle">
+                <div class="col-10of10">
+                  <p> illustration </p>
+                </div>
+              </a>
+            </div>
+        </div>
 
           <!-- project 1-->
-          <a href="profile2.html" class="clickImage">
-            <div class="designersModule col-2of10">
-              <div class="designersImage">
-                <img src="img/placeholder.png">
+
+          <div class="graphicDesign gd-shown">
+            <a href="profile2.html" class="clickImage">
+              <div class="designersModule col-2of10">
+                <div class="designersImage">
+                  <img src="img/placeholder.png">
+                </div>
+                <div class="designersText">
+                  <h2>LOREM IPSUM</h2>
+                   <p>
+                     LOREM IPSUM
+                  </p>
+                </div>
               </div>
-              <div class="designersText">
-                <h2>LOREM IPSUM</h2>
-                 <p>
-                   LOREM IPSUM
-                </p>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
 
 
           <!-- project 2-->
-          <a href="profile1.html" class="clickImage">
+          <a href="profile1.html" class="clickImage wd-shown">
             <div class="designersModule col-2of10">
-              <div class="designersImage clickImage">
+              <div class="designersImage clickImage webDesign">
                 <img src="img/placeholder.png">
               </div>
               <div class="designersText">
@@ -50,8 +94,8 @@
           </a>
 
           <!-- project 3-->
-          <a href="http://whatgifs.com/wp-content/uploads/2013/04/funny-gifs-bored2.gif" class="clickImage">
-            <div class="designersModule col-2of10">
+          <a href="http://whatgifs.com/wp-content/uploads/2013/04/funny-gifs-bored2.gif" class="gd-shown clickImage ">
+            <div class="designersModule col-2of10 illustration">
               <div class="designersImage">
                 <img src="img/placeholder.png">
               </div>
@@ -66,8 +110,8 @@
 
 
           <!-- project 4-->
-           <a href="http://i.imgur.com/1bOj01x.gifv" class="clickImage">
-            <div class="designersModule col-2of10">
+           <a href="http://i.imgur.com/1bOj01x.gifv" class="gd-shown clickImage ">
+            <div class="designersModule col-2of10 photography">
               <div class="designersImage">
                 <img src="img/placeholder.png">
               </div>
@@ -82,7 +126,7 @@
 
 
           <!-- project 5-->
-           <a href="http://i.imgur.com/4GDXQqB.gif" class="clickImage">
+           <a href="http://i.imgur.com/4GDXQqB.gif" class="gd-shown clickImage interactionDesign">
             <div class="designersModule col-2of10">
               <div class="designersImage">
                 <img src="img/placeholder.png">
@@ -352,6 +396,9 @@
 
 
     </div> <!--end main container -->
+
+ <script src="js/jquery.js"></script>
+ <script src="js/our-js.js"></script>
 
   
   </body>
