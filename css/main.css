@@ -504,27 +504,16 @@ footer{
   opacity: 1;
 }
 
-.gd-hidden {
+.itsHidden {
   visibility: none;
   display:none;
   position: absolute;
   opacity: 0;
 }
 
-.wd-hidden {
-  visibility: none;
-  display:none;
-  position: absolute;
-  opacity: 0;
-}
-
-.wd-shown {
- visibility: visible;
-  opacity: 1;
-}
-
-.gd-shown {
+.itsShown {
   visibility: visible;
+  display: block;
   opacity: 1;
 }
 
