@@ -96,6 +96,7 @@
 
 
 
+
 @media (max-width: 30em) {
 	.col-2of10{
 		width:100%;
@@ -117,14 +118,27 @@
 	.col-1of10{
 		width:50%;
 	}
+
+	.col-7of10 {
+		width:100%;
+	}
 	.serviceType {
 		padding: 1em 1em 1em;
 	}
 	section {
-		padding:1em!important;
+		padding:2em 1em 1em 1em!important;
 		margin:0!important;
+
 	}
+	nav .button {
+		width: 25% !important;
+		border:none;
+		padding: 0.25em 0em 0.25em 0em !important;
+	}
+
 }
+
+
 
 
 .grid:after{

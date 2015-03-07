@@ -291,6 +291,22 @@ a.button2:hover, a.button2:focus {
   float:right;
 }
 
+.faq{
+  text-align:left;
+  display:inline-block;
+}
+
+.input-wrapper textarea{
+  letter-spacing: 2px;
+  background-color: #E5E5E5;
+  border: 1px solid #E5E5E5;
+  background:transparent;
+  min-width: 25%;
+  width:100%;
+  float:right;
+  height:10em;
+  float:center;
+}
 
 
 
