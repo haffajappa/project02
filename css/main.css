@@ -76,7 +76,7 @@ nav img {
 
 .imageTextOverlay {
   position:relative;
-  height:1000px;
+  height:530px;
   display: table;
 }
 
@@ -92,7 +92,6 @@ nav img {
 
 .fullImage {
     width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
