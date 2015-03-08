@@ -122,6 +122,11 @@
 	.col-7of10 {
 		width:100%;
 	}
+
+	.col-6of10{
+		width:100%;
+	}
+
 	.serviceType {
 		padding: 1em 1em 1em;
 	}

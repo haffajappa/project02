@@ -207,7 +207,7 @@ a.submit-button{
   display: inline-block;
   float:right;
   padding:0.8em 2em 0.8em 2em;
-  margin:3em;
+  margin:3em 3em 3em 3em;
   color: #FFFFFF;
   background-color: #222222;
   text-decoration: none;
@@ -523,7 +523,8 @@ footer{
 .itsHidden {
   visibility: none;
   display:none;
-  position: absolute;
+  position: absolu
+  te;
   opacity: 0;
 }
 
@@ -532,6 +533,27 @@ footer{
   display: block;
   opacity: 1;
 }
+
+.designer-intro{
+  text-align:left;
+  padding:1em;
+  
+}
+
+.profile-img img{
+  padding-top:1.5em;
+}
+
+.choose-one{
+  border-bottom:1px dotted black;
+  padding-top:3em;
+  padding-bottom:1em;
+}
+
+
+
+
+
 
 /*
 .book a {
