@@ -8,9 +8,12 @@
   </head>
 
   <body>
-    <h1>STYLE GUIDE TEMPLATE</h1>
-    <p>Below are the styles to be used with the company's website.</p>
-    <p>Guide by Stephanie Taniguchi + Yan Yao Li | IAT339 | D101</p>
+
+    <section class="grid col-10of10">
+      <h1>STYLE GUIDE TEMPLATE</h1>
+      <h4>Guide by Stephanie Taniguchi + Yan Yao Li | IAT339 | D101</h4>
+      <h2>Below are the styles to be used with the company's website.</h2>
+      
 
     <!--navigation -->
       Go to: <br>
@@ -21,8 +24,9 @@
       <a href="#images" class="button2">IMAGES</a>
       <a href="#navigation" class="button2">NAVIGATION</a>
 
+      <br>
+
     <!-- Colors -->
-    <section id="Colours">
       <h2> BRAND ELEMENTS </h2>
       <h4> COLOURS: </h4>
       <div class="coloredBox colour1">
@@ -36,6 +40,7 @@
       </div>
        
     </section>
+    
     <!-- Fonts + Headings -->
      <section id="fonts">
       <h2> HEADINGS + TEXT </h2>
@@ -132,7 +137,7 @@
     </section>
 
      <!-- Forms -->
-    <section id="forms">
+    <section id="forms" class="grid">
       <h2>FORMS AND SEARCH</h2>    
         <h4>CSS SELECTOR:</h4>
         <p>'.input-wrapper'</p>
@@ -148,36 +153,53 @@
 
         <h4>RENDERED ELEMENT:</h4>
 
-        <form method="post" action="#">
-          <div class="input-wrapper">
-            <div id="first-name" class="form-type-input">
-              <label for="form-subject">FIRST NAME:</label>
-              <input type="text" id="form-first-name">
-            </div>
+          <div class="col-10of10">
+            <div class="info-form col-7of10">
+              
 
-            <div id="last-name" class="form-type-input">
-              <label for="form-subject">LAST NAME:</label>
-              <input type="text" id="form-last-name">
-            </div>
+               <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id="choose-designer" class="drop-down form-type-input">
+                    <label for="form-subject" class="designer-option">DROP-DOWN:</label>
+                    <select id="form-service" class="select-one">
+                      <option value="stephanieTaniguchi">Stephanie Taniguchi</option>
+                      <option value="yanLi">Yan Yao Li</option>
+                      <option value="evaLi">Eva Li</option>
+                      <option value="janiceNg">Janice Ng</option>
+                   </select>
+                  </div>
+                </div>
+              </div>
 
-            <div id="address" class="form-type-input">
-              <label for="form-subject">ADDRESS:</label>
-              <input type="text" id="from-address" size="70">
-            </div>
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "date" class="form-type-input">
+                    <label for="form-subject">DATE:</label>
+                    <input type="date" id="form-date">
+                  </div>
+                </div>
+              </div>
 
-            <div id="service" class="drop-down form-type-input">
-                <label for="form-subject">SERVICE:</label>
-                  <select id="from-service" class="select-one">
-                     <option value="Graphic Design">GRAPHIC DESIGN</option>
-                     <option value="Web Design">WEB DESIGN</option>
-                     <option value="Video">VIDEO</option>
-                     <option value="Photography">PHOTOGRAPHY</option>
-                  </select>
-            </div>
+              <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "firstname" class="form-type-input">
+                    <label for="form-subject">NAME:</label>
+                    <input type="text" id="form-first-name">
+                  </div>
+                </div>
+              </div>
 
+               <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "expiryDate" class="form-type-input">
+                    <label for="form-subject">EXPIRY DATE:</label>
+                    <input type="number" min="1" max="12" id="form-number" style="width:25%; margin-right:1em">
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
-        </form>
-
     </section>
 
     <!-- images -->
@@ -219,7 +241,6 @@
         &nbsp; &nbsp; &lt;a href="#" class="button"&gt;BUTTON FOUR&lt;/a&gt; <br>
         &nbsp; &nbsp; &lt;a href="#" class="button"&gt;BUTTON FIVE&lt;/a&gt; <br>
         &nbsp; &lt;/nav&gt;</code>
-      <h4>RENDERED ELEMENT:</h4>
         <nav>
           <a href="#" class="button"> BUTTON ONE </a>
           <a href="#" class="button"> BUTTON TWO </a>
@@ -228,6 +249,7 @@
           <a href="#" class="button"> BUTTON FIVE</a>
         </nav>
     </section>
+    <br>
 
   </body>
 </html>

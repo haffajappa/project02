@@ -33,6 +33,9 @@ h3{
 h4 {
   font-family: sans-serif;
   color: grey;
+  font-weight:300;
+  font-size:0.8em;
+  letter-spacing:2px;
 }
 
 p { 
@@ -260,7 +263,7 @@ a.button2:hover, a.button2:focus {
   width:65%;
   float:right;
   height:1.5em;
-  text-indent:2em;
+  text-indent:1em;
 }
 
 
@@ -374,10 +377,10 @@ a.clickImage:hover img {
 .designersModule {
   box-sizing: border-box;
   float:left;
-  height: 300px;
   position: relative;
   background-color: #D03967;
 }
+
 
 .designersImage {
   height: 100%;
@@ -390,8 +393,7 @@ a.clickImage:hover img {
 }
 
 .designersText {
-  border: 1px solid grey;
-  padding: 1em;
+  padding: 4em;
   letter-spacing: 3px;
   color: white;
   top: 0;
@@ -399,7 +401,6 @@ a.clickImage:hover img {
   height: 100%;
   margin: 0 auto;
   position: absolute;
-  text-align: center !important;
   box-sizing: border-box;
 }
 
