@@ -14,9 +14,14 @@
 	text-align: center;
 }
 
+/*desktop*/
+
 .col-10of10 {
 	width:100%;
 
+}
+.col-8of10 {
+	width:80%;
 }
 
 .col-7of10 {
@@ -47,6 +52,7 @@
 	width: 20%;
 	float: left;
 	margin:none;
+	 box-sizing: border-box;
 }
 
 .col-1of10 {
@@ -55,6 +61,18 @@
 }
 
 
+/* small screen */
+@media (min-width: 120em) {
+	
+	.fullImage {
+		display:none;
+	}
+
+	nav {
+		font-size:200% !important;
+	}
+}
+/* small screen */
 
 @media (min-width: 50em) and (max-width:70em) {
 	.col-5of10{
@@ -63,17 +81,70 @@
 	.col-3of10{
 		width:100%;
 	}
+
+	.col-2of10 {
+		width:25%;
+	}
+
 	.designersModule{
 		width:33.333%;
 	}
 
+	.col-2of10 {
+		width:25%;
+	}
+	.logo {
+		display:none;
+	}
 	section {
 		padding:0!important;
 		margin:0!important;
 	}
+
+	.projectContainer .col-8of10 {
+		width:80%;
+	}
+
+	.projectContainer .col-7of10 {
+		width: 70%;
+	}
+
+	.projectContainer .col-6of10 {
+		width: 60%;
+	}
+
+	.projectContainer .col-5of10 {
+		width:50%;
+	}
+
+	.projectContainer .col-4of10 {
+		width:40%;
+		float:left;
+	}
+
+	.projectContainer .col-3of10{
+		float:left;
+		position: relative;
+		width:33.333%;
+		text-align:center;
+	}
+
+	.projectContainer .col-2of10 {
+		width: 20%;
+		float: left;
+		margin:none;
+		 box-sizing: border-box;
+	}
+
+	.projectContainer .col-1of10 {
+		width: 10%;
+		float: left;
+	}
+
 }
 
 
+/* tablet screen */
 
 @media (min-width: 30em) and (max-width:50em) {
 	.col-5of10{
@@ -90,14 +161,61 @@
 		width:20%;
 	}
 
+	.logo {
+		display:none;
+	}
 	section {
 		padding:0!important;
 		margin:0!important;
 	}
+
+	.projectContainer .col-8of10 {
+		width:50%;
+	}
+
+	.projectContainer .col-7of10 {
+		width: 50%;
+	}
+
+	.projectContainer .col-6of10 {
+		width: 50%;
+	}
+
+	.projectContainer .col-5of10 {
+		width:50%;
+	}
+
+	.projectContainer .col-4of10 {
+		width:50%;
+		float:left;
+	}
+
+	.projectContainer .col-3of10{
+		float:left;
+		position: relative;
+		width:50%;
+		text-align:center;
+	}
+
+	.projectContainer .col-2of10 {
+		width: 50%;
+		float: left;
+		margin:none;
+		 box-sizing: border-box;
+	}
+
+	.projectContainer .col-1of10 {
+		width: 50%;
+		float: left;
+	}
+
+
+
+
 }
 
 
-
+/* mobile screen */
 
 @media (max-width: 30em) {
 	.col-2of10{
@@ -129,6 +247,9 @@
 		width:100%;
 	}
 
+	.col-1of10 {
+		width:100%;
+	}
 	.serviceType {
 		padding: 1em 1em 1em;
 	}
@@ -151,6 +272,11 @@
 	.designer-intro p{
 		padding-right:1em !important;
 	}
+
+	.logo {
+		display:none;
+	}
+
 }
 
 

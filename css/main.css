@@ -54,6 +54,8 @@ nav {
   clear: both;
   z-index: 20;
   top: 0 !important;
+   box-sizing: border-box;
+
 }
 
 nav .button {
@@ -65,7 +67,7 @@ nav .button {
 
 nav img {
   display: inline-block;
-  height: 100%;
+  vertical-align: middle;
 }
 
 .navOption {
@@ -77,13 +79,13 @@ nav img {
   font-weight: bolder;
 }
 
-.imageTextOverlay {
+/*.imageTextOverlay {
   position:relative;
   height:530px;
   display: table;
-}
+}*/
 
-.overlayContent {
+/*.overlayContent {
     vertical-align:middle;
     display: table-cell;
     margin: 0 auto;
@@ -92,10 +94,10 @@ nav img {
     left: 0;
     z-index:1;
 }
-
+*/
 .fullImage {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index:0;
@@ -371,7 +373,15 @@ a.clickImage:hover img {
 
 .serviceType {
   box-sizing: border-box;
-/*  padding: 1em;*/
+  padding: 2em;
+}
+
+.serviceType p{
+  text-align:left;
+}
+
+.serviceType h2{
+  text-align:center;
 }
 
 .designersModule {
@@ -437,14 +447,7 @@ a.clickImage:hover img {
   position:relative;
 }
 
-.serviceType p{
-  padding:1em;
-  text-align:center;
-}
 
-.serviceType h2{
-  text-align:center;
-}
 
 footer{
   background-color:black;
@@ -484,10 +487,17 @@ footer{
   margin-bottom: 1em;
 }
 
+.projectThumb {
+  overflow:hidden;
+  max-height:10em;
+}
+
 .projectThumb img {
   max-width:100%;
   min-width:100%;
+  min-height:100%;
   width: auto !important;
+
 }
 
 .book {
@@ -550,22 +560,3 @@ footer{
   padding-top:3em;
   padding-bottom:1em;
 }
-
-
-
-
-
-
-/*
-.book a {
-  text-align: center !important;
-  color: white;
-  text-decoration:none;
-  background-color: #D03967;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.book a:hover a:focus{
-  background-color: #ffffff ;
-}*/
