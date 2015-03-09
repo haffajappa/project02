@@ -54,6 +54,8 @@
 	float: left;
 }
 
+
+
 @media (min-width: 50em) and (max-width:70em) {
 	.col-5of10{
 		width:100%;
@@ -140,7 +142,15 @@
 		border:none;
 		padding: 0.25em 0em 0.25em 0em !important;
 	}
+	a.submit-button{
+		margin:1em 3em 1em 0em !important;
+		font-size: 50% !important;
+		float:right !important;
+	}
 
+	.designer-intro p{
+		padding-right:1em !important;
+	}
 }
 
 
