@@ -1,3 +1,5 @@
+/* --------- GENERAL STYLES ----------- */
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0em;
@@ -44,88 +46,6 @@ p {
   line-height: 1.25;
 }
 
-nav {
-  width:100%;
-  padding: 0em 0em;
-  position: fixed;
-  background-color: #222222;
-  border: 1px dotted grey;
-  letter-spacing: 2;
-  clear: both;
-  z-index: 20;
-  top: 0 !important;
-   box-sizing: border-box;
-
-}
-
-nav .button {
-  margin: 0em 2em 0em 2em;
-  float: left;
-  text-align: center;
-  right:0;
-}
-
-nav img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.navOption {
-  right:0;
-}
-
-#callToAction  {
-  color: #D03967;
-  font-weight: bolder;
-}
-
-.first p {
-  text-align:left !important;
-}
-/*.imageTextOverlay {
-  position:relative;
-  height:530px;
-  display: table;
-}*/
-
-/*.overlayContent {
-    vertical-align:middle;
-    display: table-cell;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index:1;
-}
-*/
-.fullImage {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index:0;
-}
-
-.fullImage img{
-  box-sizing: border-box;
-  display: inline-block;
-  width:100%;
-}
-
-.introText {
-    vertical-align: middle;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.introText p {
-  font-size:130%;
-}
-.noMargins {
-  padding: 0 0 0 0 !important;
-}
-
 section h1 {
   color: #D03967;
 }
@@ -161,36 +81,98 @@ td {
   padding: 1em;
 }
 
+/* --------- NAV STYLES ----------- */
+
+nav {
+  width:100%;
+  padding: 0em 0em;
+  position: fixed;
+  background-color: #222222;
+  border: 1px dotted grey;
+  letter-spacing: 2;
+  clear: both;
+  z-index: 20;
+  top: 0 !important;
+   box-sizing: border-box;
+
+}
+
+nav .button {
+  margin: 0em 2em 0em 2em;
+  float: left;
+  text-align: center;
+  right:0;
+}
+
+nav img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navOption {
+  right:0;
+}
+
+#callToAction  {
+  color: #D03967;
+  font-weight: bolder;
+}
+
+/*.first p {
+  text-align:left !important;
+}*/
+
+/*.imageTextOverlay {
+  position:relative;
+  height:530px;
+  display: table;
+}*/
+
+/*.overlayContent {
+    vertical-align:middle;
+    display: table-cell;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+*/
+
+/*---- footers ----- */
+
+footer{
+  background-color:black;
+  padding-bottom:10em;
+  padding-top:4em;
+  margin-top:4em;
+}
+
+.homeFooter p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size:0.6em;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.homeFooter{
+  display:inline-block;
+}
+
+.homeFooter img{
+  padding:0.2em;
+}
+
+/* --------- ALL PAGE STYLES ------------*/
+
 .mainContainer {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-.coloredBox {
-  display: inline-block;
-  padding: 1em;
-  height: 5em;
-  width: 5em;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-}
 
-.colour1{
-  background-color: #D03967;
-}
-
-.colour2{
-  background-color:#222222;
-  border:1px solid #222222;
-  color:#FFFFFF;
-}
-
-.colour3{
-  background-color: #E5E5E5;
-  color: grey !important;
-}
-
+/* ----- LINKS ----*/
 
 a.button {
   display: inline-block;
@@ -247,6 +229,101 @@ a.button2:hover, a.button2:focus {
   font-style: italic;
 }
 
+/* ----- IMAGE LINKS ----*/
+
+a.clickImage {
+  z-index:-1;
+  opacity: 1;
+ /* -moz-transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;*/
+
+}
+
+a.clickImage img {
+  -moz-transition: -webkit-filter .5s linear;
+  -webkit-transition: -webkit-filter .5s linear;
+  -o-transition: -webkit-filter .5s linear;
+  transition: -webkit-filter .5s linear;
+  -webkit-filter: grayscale(100%);   
+}
+
+a.clickImage:hover img {
+  opacity: 1;
+  -webkit-filter: grayscale(10%); 
+
+}
+
+.image-background {
+  display: inline-block;
+  z-index: 0;
+  background: #D03967;
+}
+
+/* --------- HOME PAGE STYLES ----------- */
+
+/*landing image div*/
+.fullImage {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index:0;
+}
+
+/*landing image*/
+.fullImage img{
+  box-sizing: border-box;
+  display: inline-block;
+  width:100%;
+}
+
+/*.introText {
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.introText p {
+  font-size:130%;
+}*/
+
+.noMargins {
+  padding: 0 0 0 0 !important;
+}
+
+
+/* --------- STYLE GUIDE SPECIFIC ------------*/
+
+.coloredBox {
+  display: inline-block;
+  padding: 1em;
+  height: 5em;
+  width: 5em;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.colour1{
+  background-color: #D03967;
+}
+
+.colour2{
+  background-color:#222222;
+  border:1px solid #222222;
+  color:#FFFFFF;
+}
+
+.colour3{
+  background-color: #E5E5E5;
+  color: grey !important;
+}
+
+/* --------- FORMS ---------- */
+
 a.in-textbutton2 {
   border: 1px dotted #D03967;
   font-weight: bolder;
@@ -267,10 +344,8 @@ a.in-textbutton2:hover, a.in-textbutton2:focus {
 }
 
 .input-wrapper {
-  /**padding: 1em;**/
   text-align:left;
   padding-right:3em;
-  /**border: 1px dotted grey;**/
 }
 
 .input-wrapper label {
@@ -317,11 +392,6 @@ a.in-textbutton2:hover, a.in-textbutton2:focus {
   float:right;
 }
 
-.faq{
-  text-align:left;
-  display:inline-block;
-}
-
 .input-wrapper textarea{
   letter-spacing: 2px;
   background-color: #E5E5E5;
@@ -335,38 +405,43 @@ a.in-textbutton2:hover, a.in-textbutton2:focus {
 }
 
 
-
-.image-background {
-  display: inline-block;
-  z-index: 0;
-  background: #D03967;
+.personalInfo {
+  padding-right: 2em;
 }
 
 
-a.clickImage {
-  z-index:-1;
-  opacity: 1;
- /* -moz-transition: opacity .3s linear;
-  -webkit-transition: opacity .3s linear;
-  -o-transition: opacity .3s linear;
-  transition: opacity .3s linear;*/
-
+.form{
+  display:inline-block;
+  margin:5em 5em 2em 5em;
 }
 
-a.clickImage img {
-  -moz-transition: -webkit-filter .5s linear;
-  -webkit-transition: -webkit-filter .5s linear;
-  -o-transition: -webkit-filter .5s linear;
-  transition: -webkit-filter .5s linear;
-  -webkit-filter: grayscale(100%);   
+.form h2{
+  text-align:left;
 }
 
-a.clickImage:hover img {
-  opacity: 1;
-  -webkit-filter: grayscale(10%); 
-
+.info-form{
+  display:inline-block;
+  text-align:left;
 }
 
+.info-form h2{
+  text-align:left;
+}
+
+.formField {
+  margin: 0px !important;
+  float:left;
+  position:relative;
+}
+
+
+
+.faq{
+  text-align:left;
+  display:inline-block;
+}
+
+/* ---- works & designers ---- */
 
 .serviceType {
   box-sizing: border-box;
@@ -403,7 +478,6 @@ a.clickImage:hover img {
     position:relative;
     min-height: 100%;
     width: 100%;
-    /*-webkit-filter: grayscale(90%); filter: grayscale(100%);*/
 }
 
 .designersText {
@@ -420,64 +494,14 @@ a.clickImage:hover img {
 }
 
 .designersText h2, p{
-  text-align: center !important;
-    text-shadow: 0px 0px 2px #AAAAAA;
-}
-
-.personalInfo {
-  padding-right: 2em;
-}
-
-
-.form{
-  display:inline-block;
-  margin:5em 5em 2em 5em;
-}
-
-.form h2{
-  text-align:left;
-}
-
-.info-form{
-  display:inline-block;
-  text-align:left;
-}
-
-.info-form h2{
-  text-align:left;
-}
-
-.formField {
-  margin: 0px !important;
-  float:left;
-  position:relative;
-}
-
-
-
-footer{
-  background-color:black;
-  padding-bottom:10em;
-  padding-top:4em;
-  margin-top:4em;
-}
-
-.homeFooter p{
-  font-family: 'Open Sans', sans-serif;
-  font-weight:300;
-  font-size:0.6em;
-  color: #FFFFFF;
   text-align: center;
+  text-shadow: 0px 0px 2px #AAAAAA;
 }
 
-.homeFooter{
-  display:inline-block;
-}
 
-.homeFooter img{
-  padding:0.2em;
-}
 
+
+/* ---- PROFILE PAGE ---- */
 
 .personalInfo h2 {
   font-size:300%;
@@ -485,12 +509,24 @@ footer{
   padding: 0 0 0 0 !important;
 }
 
+.personalInfo  p {
+  text-align: left!important ;
+}
+
 .personalInfo strong {
   color: #D03967;
 }
 
+.projectInfo  p {
+  text-align: left!important ;
+}
+
 .areasOfWork {
   margin-bottom: 1em;
+}
+
+.areasOfWork button {
+  padding: none;
 }
 
 .projectThumb {
@@ -505,24 +541,12 @@ footer{
   width: auto !important;
 
 }
-.projectInfo  p {
-  text-align: left!important ;
-}
-
-
-.personalInfo  p {
-  text-align: left!important ;
-}
 
 .book {
   padding-top: 4em;
   text-align: center !important;
   color: white;
   margin: 0 auto;
-}
-
-.areasOfWork button {
-  padding: none;
 }
 
 .itsHidden {

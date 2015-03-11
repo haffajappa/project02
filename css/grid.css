@@ -75,7 +75,7 @@
 
 /* small screen */
 
-@media (min-width: 50em) and (max-width:70em) {
+@media (min-width: 50em) and (max-width:50em) {
 	.col-5of10{
 		width:100%;
 	}
