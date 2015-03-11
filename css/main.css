@@ -105,6 +105,7 @@ nav .button {
 }
 
 nav img {
+
   display: inline-block;
   vertical-align: middle;
 }
@@ -118,6 +119,17 @@ nav img {
   font-weight: bolder;
 }
 
+.mobile .logo {
+  left:0;
+}
+
+.moble .button {
+  right:0;
+}
+
+.mobile img {
+  margin-top: 1em;
+}
 /*.first p {
   text-align:left !important;
 }*/
@@ -188,7 +200,7 @@ a.button {
 }
 
 
-a.button:hover, a.button:focus, a.submit-button:hover, a.submit-button:focus {
+a.button:hover, a.button:focus, a.submit-button:hover, a.submit-button:focus, a.menuButton:hover, a.menuButton:focus {
   background-color: #D03967;
   color: white !important;
 }
@@ -227,6 +239,26 @@ a.button2:hover, a.button2:focus {
   color: white !important;
   font-weight: bold;
   font-style: italic;
+}
+
+a.menuButton {
+  text-decoration: none !important;
+}
+
+.menuButton h2 {
+  color:white !important;
+  text-align:center !important;
+}
+
+.subMenu {
+  padding:0 !important;
+  z-index:20   !important;
+  position: fixed;
+  float:left;
+}
+
+.subMenu button {
+  width:100% !important;
 }
 
 /* ----- IMAGE LINKS ----*/
@@ -549,20 +581,6 @@ a.in-textbutton2:hover, a.in-textbutton2:focus {
   margin: 0 auto;
 }
 
-.itsHidden {
-  visibility: none;
-  display:none;
-  position: absolu
-  te;
-  opacity: 0;
-}
-
-.itsShown {
-  visibility: visible;
-  display: block;
-  opacity: 1;
-}
-
 .designer-intro{
   text-align:left;
   padding:1em;
@@ -577,4 +595,20 @@ a.in-textbutton2:hover, a.in-textbutton2:focus {
   border-bottom:1px dotted black;
   padding-top:3em;
   padding-bottom:1em;
+}
+
+
+/* ---- toggles ---- */
+
+.itsHidden {
+  visibility: none;
+  display:none;
+  position: absolute;
+  opacity: 0;
+}
+
+.itsShown {
+  visibility: visible;
+  display: block;
+  opacity: 1;
 }

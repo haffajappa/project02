@@ -60,6 +60,9 @@
 	float: left;
 }
 
+.mobile {
+	display:none;
+}
 
 /* tv screen */
 @media (min-width: 120em) {
@@ -73,84 +76,15 @@
 	}
 }
 
-/* small screen */
-
-@media (min-width: 50em) and (max-width:50em) {
-	.col-5of10{
-		width:100%;
-	}
-	.col-3of10{
-		width:100%;
-	}
-
-	.col-2of10 {
-		width:25%;
-	}
-
-	.designersModule{
-		width:33.333%;
-	}
-
-	.col-2of10 {
-		width:25%;
-	}
-	.logo {
-		display:none;
-	}
-	section {
-		padding:1em!important;
-		margin:0!important;
-	}
-
-	.projectContainer .col-8of10 {
-		width:80%;
-	}
-
-	.projectContainer .col-7of10 {
-		width: 70%;
-	}
-
-	.projectContainer .col-6of10 {
-		width: 60%;
-	}
-
-	.projectContainer .col-5of10 {
-		width:50%;
-	}
-
-	.projectContainer .col-4of10 {
-		width:40%;
-		float:left;
-	}
-
-	.projectContainer .col-3of10{
-		float:left;
-		position: relative;
-		width:33.333%;
-		text-align:center;
-	}
-
-	.projectContainer .col-2of10 {
-		width: 20%;
-		float: left;
-		margin:none;
-		 box-sizing: border-box;
-	}
-
-	.projectContainer .col-1of10 {
-		width: 10%;
-		float: left;
-	}
-
-	.book{
-		width:30%;
-	}
-}
 
 
 /* tablet screen */
 
 @media (min-width: 30em) and (max-width:50em) {
+	.mainContainer {
+		padding:0.5em;
+	}
+
 	.col-5of10{
 		width:100%;
 	}
@@ -231,7 +165,6 @@
 @media (max-width: 30em) {
 	.col-2of10{
 		width:100%;
-		border-bottom: white solid 1px;
 		text-align: center;
 		/*padding: 1em 1em;*/
 	}
@@ -270,7 +203,6 @@
 
 	}
 	nav .button {
-		width: 25% !important;
 		border:none;
 		padding: 0.25em 0em 0.25em 0em !important;
 	}
@@ -288,6 +220,25 @@
 		display:none;
 	}
 
+	.mobile {
+		display:inline-block;
+	}
+	.desktop {
+		display:none;
+	}
+
+	nav .col-2of10 {
+		width:50%;
+	}
+
+	.first {
+		margin-top:2em !important;
+	}
+
+	.subMenu{
+		position:fixed;
+		top:0;
+	}
 }
 
 

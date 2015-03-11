@@ -10,15 +10,72 @@
   </head>
   <body>
     <div class = "mainContainer">
-        <nav>
-          <div class="col-2of10 logo">
-            <img src="img/logo2.png" class="col-10of10" alt="a logo that reads design u">
-          </div>
-          <a href="index.html" class="button col-2of10"> HOME </a>
-           <a href="designers.html" class="button col-2of10"> WORKS + DESIGNERS </a>
-          <a href="support.html" class="button col-2of10"> SUPPORT + CONTACT </a>
-          <a href="chooseDesigner.html" class="button col-2of10" id="callToAction"> BOOK A DESIGNER </a>
+        
+         <!-- DESKTOP NAVIGATION -->
+         <nav class="grid desktop">
+
+            <!--navigation logo -->
+            <div class="col-2of10 logo">
+              <a href="index.html">
+                <img src="img/logo2.png" class="col-10of10" alt="a logo that reads design u">
+              </a>
+            </div>
+
+            <!--navigation links -->
+            <a href="index.html" class="button col-2of10"> 
+              HOME 
+            </a>
+            <a href="designers.html" class="button col-2of10"> 
+              WORKS + DESIGNERS 
+            </a>
+            <a href="support.html" class="button col-2of10"> 
+              SUPPORT + CONTACT 
+            </a>
+            <a href="chooseDesigner.html" class="button col-2of10" id="callToAction"> 
+              BOOK A DESIGNER 
+            </a>
         </nav>
+
+        <!-- MOBILE NAVIGATION -->
+        <nav class="grid col-10of10 mobile">
+
+            <!--navigation logo -->
+            <div class="col-2of10">
+              <a href="index.html">
+                <img src="img/logo2.png" class="col-10of10" alt="a logo that reads design u">
+              </a>
+            </div>
+
+            <!--navigation links -->
+            <div class="col-2of10 menuButton">
+              <a href="#" class="menu-toggle menuButton">
+                <h2> M E N U </h2>
+              </a>
+            </div>
+
+        </nav> <!--end mobile navigation -->
+
+        <!--sub navigation links -->
+        <section class="grid subMenu itsHidden">
+           <div class="col-10of10">
+              <a href="index.html" class="button col-10of10"> 
+                HOME 
+              </a>
+              <a href="designers.html" class="button col-10of10"> 
+                WORKS + DESIGNERS 
+              </a>
+              <a href="support.html" class="button col-10of10"> 
+                SUPPORT + CONTACT 
+              </a>
+              <a href="chooseDesigner.html" class="button col-10of10" id="callToAction"> 
+                BOOK A DESIGNER 
+              </a>
+              <a href="#" class="button col-10of10 menu-toggle"> ^ </a>
+            </div>
+        </section>
+
+<!-- .................................................... -->
+
         <section class="grid first">
           <div class="title col-6of10">
             <h1> WORKS + DESIGNERS </h1>

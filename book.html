@@ -2,9 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
-    <title>YOUR BOOKING</title>
+    <title>Project 2</title>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -12,20 +11,77 @@
   <body>
 
 <div class = "mainContainer">
-         <nav>
-          <div class="col-2of10 logo">
-            <img src="img/logo2.png" class="col-10of10" alt="a logo that reads design u">
-          </div>
-          <a href="index.html" class="button col-2of10"> HOME </a>
-           <a href="designers.html" class="button col-2of10"> WORKS + DESIGNERS </a>
-          <a href="support.html" class="button col-2of10"> SUPPORT + CONTACT </a>
-          <a href="chooseDesigner.html" class="button col-2of10" id="callToAction"> BOOK A DESIGNER </a>
+                 
+         <!-- DESKTOP NAVIGATION -->
+         <nav class="grid desktop">
+
+            <!--navigation logo -->
+            <div class="col-2of10 logo">
+              <a href="index.html">
+                <img src="img/logo2.png" class="col-10of10" alt="a logo that reads design u">
+              </a>
+            </div>
+
+            <!--navigation links -->
+            <a href="index.html" class="button col-2of10"> 
+              HOME 
+            </a>
+            <a href="designers.html" class="button col-2of10"> 
+              WORKS + DESIGNERS 
+            </a>
+            <a href="support.html" class="button col-2of10"> 
+              SUPPORT + CONTACT 
+            </a>
+            <a href="chooseDesigner.html" class="button col-2of10" id="callToAction"> 
+              BOOK A DESIGNER 
+            </a>
         </nav>
 
-        <section class="grid">
+        <!-- MOBILE NAVIGATION -->
+        <nav class="grid col-10of10 mobile">
+
+            <!--navigation logo -->
+            <div class="col-2of10">
+              <a href="index.html">
+                <img src="img/logo2.png" class="col-10of10" alt="a logo that reads design u">
+              </a>
+            </div>
+
+            <!--navigation links -->
+            <div class="col-2of10 menuButton">
+              <a href="#" class="menu-toggle menuButton">
+                <h2> M E N U </h2>
+              </a>
+            </div>
+
+        </nav> <!--end mobile navigation -->
+
+        <!--sub navigation links -->
+        <section class="grid subMenu itsHidden">
+           <div class="col-10of10">
+              <a href="index.html" class="button col-10of10"> 
+                HOME 
+              </a>
+              <a href="designers.html" class="button col-10of10"> 
+                WORKS + DESIGNERS 
+              </a>
+              <a href="support.html" class="button col-10of10"> 
+                SUPPORT + CONTACT 
+              </a>
+              <a href="chooseDesigner.html" class="button col-10of10" id="callToAction"> 
+                BOOK A DESIGNER 
+              </a>
+              <a href="#" class="button col-10of10 menu-toggle"> ^ </a>
+            </div>
+        </section>
+
+
+<!-- .................................................... -->
+
+
+        <section>
           <div class="col-10of10">
             <div class="info-form col-7of10">
-              <h1>BOOK A DESIGNER FOR CONSULATION</h1>
               <h2>YOUR BOOKING</h2>
               <div class="formField col-5of10">
                 <div class="input-wrapper">
@@ -36,7 +92,6 @@
                       <option value="Web Design">WEB DESIGN</option>
                       <option value="Video">VIDEO</option>
                       <option value="Photography">PHOTOGRAPHY</option>
-                      <option value="Photography">UX/UI</option>
                    </select>
                   </div>
                 </div>
@@ -47,10 +102,10 @@
                   <div id="choose-designer" class="drop-down form-type-input">
                     <label for="form-subject" class="designer-option">DESIGNERS:</label>
                     <select id="form-service" class="select-one">
-                      <option value="stephanieTaniguchi">Eva Li</option>
-                      <option value="yanLi">Jun Peng</option>
-                      <option value="evaLi">Jessica Yuki</option>
-                      <option value="janiceNg">Yan Li</option>
+                      <option value="stephanieTaniguchi">Stephanie Taniguchi</option>
+                      <option value="yanLi">Yan Yao Li</option>
+                      <option value="evaLi">Eva Li</option>
+                      <option value="janiceNg">Janice Ng</option>
                    </select>
                   </div>
                 </div>
@@ -65,7 +120,14 @@
                 </div>
               </div>
 
-             
+               <div class="formField col-5of10">
+                <div class="input-wrapper">
+                  <div id = "time" class="form-type-input">
+                    <label for="form-subject">TIME:</label>
+                    <input type="time" id="form-time">
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -75,7 +137,7 @@
 <!-- .................................................... -->
 
 
-        <section class="grid">
+        <section>
           <div class="col-10of10">
             <div class="info-form col-7of10">
               <h2>PERSONAL INFORMATION</h2>
@@ -139,7 +201,7 @@
 
 <!-- .................................................... -->
 
-        <section class="grid">
+        <section>
           <div class="col-10of10">
             <div class="info-form col-7of10">
               <h2>BILLING INFORMATION</h2>
@@ -147,7 +209,7 @@
                 <div class="input-wrapper">
                   <div id="choose-card" class="drop-down form-type-input">
                     <label for="form-subject" class="card-type">CARD TYPE:</label>
-                    <select id="form-service" class="select-one" style="width:56%;">
+                    <select id="form-service" class="select-one">
                       <option value="visa">VISA</option>
                       <option value="masterCard">MASTERCARD</option>
                       <option value="americanExpress">AMERICAN EXPRESS</option>
@@ -161,7 +223,7 @@
                 <div class="input-wrapper">
                   <div id = "cardNum" class="form-type-input">
                     <label for="form-subject">CARD NUMBER:</label>
-                    <input type="text" id="form-number" style="width:55%;">
+                    <input type="text" id="form-number">
                   </div>
                 </div>
               </div>
@@ -170,8 +232,8 @@
                 <div class="input-wrapper">
                   <div id = "expiryDate" class="form-type-input">
                     <label for="form-subject">EXPIRY DATE:</label>
-                    <input type="number" min="2015" max="2021" id="form-number" style="width:20%;">
-                    <input type="number" min="1" max="12" id="form-number" style="width:20%; margin-right:1em">
+                    <input type="number" min="2015" max="2021" id="form-number" style="width:30%;">
+                    <input type="number" min="1" max="12" id="form-number" style="width:30%; margin-right:1em">
                   </div>
                 </div>
               </div>
@@ -180,7 +242,7 @@
                 <div class="input-wrapper">
                   <div id = "cardNum" class="form-type-input">
                     <label for="form-subject">SECURITY CODE:</label>
-                    <input type="text" id="form-number" style="width:55%;">
+                    <input type="text" id="form-number">
                   </div>
                 </div>
               </div>
@@ -189,7 +251,7 @@
                 <div class="input-wrapper">
                   <div id = "address" class="form-type-input">
                     <label for="form-subject">BILLING ADDRESS:</label>
-                    <input type="text" style="width:55%;"id="form-address">
+                    <input type="text" style="width:60%;"id="form-address">
                   </div>
                 </div>
               </div>
@@ -198,12 +260,12 @@
                 <div class="input-wrapper">
                   <div id = "city" class="form-type-input">
                     <label for="form-subject">City:</label>
-                    <input type="text" id="form-city" style="width:55%;">
+                    <input type="text" id="form-city">
                   </div>
                 </div>
               </div>
 
-               <div class="sumbit-info formField col-10of10">
+               <div class="formField col-10of10">
                <a class="submit-button" href="#">SUBMIT</a>
               </div>
 
@@ -211,25 +273,39 @@
           </div>
         </section>
 
-        <footer>
+        <!--      
+        <section class="form"> 
           <div class="col-10of10">
-            <div class="homeFooter col-7of10">
-              <img src="img/ins.png">
-              <img src="img/fb.png">
-              <img src="img/tw.png">
-              <p>1355 Hamilton St.Vancouver, BC V6B 6L2</p>
-              <p>T +1 778 989 1234</p>
-              <p>E info@studio.com</p>
+          	<div id="choose-designer" class="drop-down form-type-input">
+                <label for="form-subject">SERVICE:</label>
+                  <select id="from-service" class="select-one">
+                     <option value="Graphic Design">GRAPHIC DESIGN</option>
+                     <option value="Web Design">WEB DESIGN</option>
+                     <option value="Video">VIDEO</option>
+                     <option value="Photography">PHOTOGRAPHY</option>
+                  </select>
             </div>
-          </div>
-          </div>
-        </footer>
+          	<div class="input-wrapper">
+          		<div id = "name" class="form-type-input">
+          			<label for="form-subject">FIRST NAME:</label>
+          			<input type="text" id="form-first-name">
+          			<label for="form-subject">LAST NAME:</label>
+          			<input type="text" id="form-last-name">
+          		</div>
+          	</div>
+          	<div class="input-wrapper">
+          		<div id = "contact" class="form-type-input">
+          			<label for="form-subject">PHONE NUMBER:</label>
+          			<input type="text" id="form-first-name">
+          			<label for="form-subject">E-MAIL:</label>
+          			<input type="text" id="form-last-name">
+          		</div>
+          	</div>
 
-    
-      </div> <!--end main container -->
 
-        <!-- JS -->
-    <script src="js/jquery.js"></script>
-    <script src="js/our-js.js"></script>
-  
+          </div>
+         
+          </section>
+        -->
+</div> <!--end main container -->
   </body>
