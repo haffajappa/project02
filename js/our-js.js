@@ -79,6 +79,28 @@ $(document).ready(
 				$(".graphicDesign, .webDesign, photography, interactionDesign, .illustration").removeClass("itsHidden").addClass("itsShown");
 				}
 		);
-	}
-);
+
+
+
+
+		$("a.menu-toggle").click( function(e) { 
+		
+		// preventDefault lets us prevent the <a> tag from linking through
+		e.preventDefault();
+		console.log("menu is clicked");
+		if ( $(".subMenu").hasClass("itsShown") ) {
+
+			$(".subMenu").removeClass("itsShown").addClass("itsHidden");
+			console.log("next UL should be removed");
+		} 
+		
+		else {
+
+
+			$(".subMenu").removeClass("isHidden").addClass("itsShown");
+		}
+	});
+
+	} /*function*/
+);/*document ready*/
 
